@@ -1,1 +1,63 @@
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script><script src="https://cdn.mexiserver.com/html5players/4/js/player4-mexiserver.js"></script><div id="mexiserver" style="width:100%; height:100%;"></div><script> $("#mexiserver").lunaradio({ streamurl: "https://live.lainvencibleradio.com/;stream.mp3", radioname: "La Invencible Radio", coverimage: "https://lainvencibleradio.com/logo.png", onlycoverimage: false, userinterface: "big", backgroundcolor: "#0e1015", fontcolor: "#ffffff", hightlightcolor: "#e7433c", fontname: "Saira Condensed", googlefont: "Saira+Condensed:wght@100", fontratio: "0.4", scroll: "true", coverstyle: "animated", usevisualizer: "real", visualizertype: "5", streamtype: "shoutcast1", shoutcastpath: "/", shoutcastid: "1", metadatainterval: "5000", volume: "100", usestreamcorsproxy: "true", }); </script>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Invencible Radio</title>	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body topmargin="0">
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/lunaradio.min.js"></script>
+
+<p><div id="lunaradio" style="width:100%;height:100%;position:absolute;left:0px;top:0px;z-index:300;overflow:hidden;display:block"></div></p>
+
+<script> $("#lunaradio")
+.lunaradio({ 
+     userinterface: "big",
+	backgroundcolor: "#0e1015",
+	fontcolor: "#ffffff",
+	hightlightcolor: "#e7433c",
+	fontname: "Saira Condensed",
+	googlefont: "Saira+Condensed:wght@100",
+	fontratio: "0.5",
+     backgroundImage:"",
+	radioname: "La Invencible Radio",
+	scroll: "true",
+	coverimage: "img/logo.png",
+	usevisualizer: "real",
+	coverstyle: "animated",
+	visualizertype: "5",
+	multicolorvisualizer: "true",
+      color1: "#f6f6f6",
+      color2: "#323edd",
+      color3: "#fc5404",
+      color4: "#fa225b",
+	itunestoken: "1000lIPN",
+	metadatatechnic: "corsproxy",
+	ownmetadataurl: "",
+	streamurl: "https://live.lainvencibleradio.com/;stream.mp3",
+	streamtype: "shoutcast2",
+	icecastmountpoint: "",
+	radionomyid: "",
+	radionomyapikey: "",
+	radiozenoid: "",
+	radiojarid: "",
+	radiocoid: "",
+	shoutcastpath: "/",
+	shoutcastid: "1",
+	streamsuffix: "",
+	metadatainterval: "20000",
+	volume: "100",
+	debug: "false",
+	usestreamcorsproxy: "false", 
+	corsproxy: "https://corsradio.herokuapp.com/index.php?q=",
+	autoplay:"true",
+	}); 
+</script>
+   
+</body>
+</html>
